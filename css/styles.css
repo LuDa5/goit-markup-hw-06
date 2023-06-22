@@ -26,6 +26,7 @@ img {
 display: block;
 max-width: 100%;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -50,7 +51,6 @@ max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
 } 
 
 
@@ -238,7 +238,8 @@ background-color: #404BBF
 
 .adventages-list {
     display: flex;
-    gap: 24px
+    /* flex-basis: calc((100% - 72px)/4); */
+    gap: 24px;
 }
 
 .adventages-subtitle {
@@ -261,6 +262,7 @@ background-color: #404BBF
     justify-content: center;
     margin-bottom: 8px;
 }
+
 /* ---------DOINGES3---------- */
 
 .doinges-title {
