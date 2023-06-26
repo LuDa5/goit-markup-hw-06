@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<header class="header hei">
+<header class="header">
     <div class="container header-container">
     <nav class="header-novigation">
         <a class="header-logo link" href="./index.html">Web<span class="logo-color">Studio</span></a>
@@ -34,11 +34,29 @@
         <li class="header-soc-item"><a class="header-soc-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
     </ul>
 </address>
+<button type="button" class="open-menu-btn">
+    <svg class="header-menu-hamburger" width="32" height="22">
+        <use href="./images/icons.svg#icon-menu-hamburger"></use>
+    </svg>
+</button>
+<div class="mob-menu">
+<button type="button" class="modal-btn" data-modal-close>
+    <svg class="backdrop-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+</button>
+</div>
+<ul class="header-menu list">
+    <li class="header-menu-item"><a class="header-menu-link link  current" href="./index.html">Studio</a></li>
+    <li class="header-menu-item"><a class="header-menu-link link" href="./portfolio.html">Portfolio</a></li>
+    <li class="header-menu-item"><a class="header-menu-link link" href="">Contacts</a></li>
+</ul>
+
 </div>
 </header>
 
 <main>
-    <section class="hero hei">
+    <section class="hero">
         <div class="container hero-container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-btn  btn" data-modal-open>Order Service</button>
@@ -94,13 +112,13 @@
         <h2 class="doinges-title sektion-title">What are we doing</h2>
         <ul class="doinges-list list">
             <li class="doinges-item">
-                <img src="./images/img0.jpg" alt="monitor" width="360"  height="300">
+                <img srcset="./images/img0.jpg 1x, ./images/comp-2x.jpg 2x" src="./images/img0.jpg" alt="monitor" width="360"  height="300">
             </li>
             <li class="doinges-item">
-                <img src="./images/img1.jpg" alt="telephone" width="360" height="300">
+                <img srcset="./images/img1.jpg 1x, ./images/tel-2x.jpg 2x" src="./images/img1.jpg" alt="telephone" width="360" height="300">
             </li>
             <li class="doinges-item">
-                <img src="./images/img2.jpg" alt="computer and phone" width="360" height="300">
+                <img srcset="./images/img2.jpg 1x, ./images/comp-tel-2x.jpg 2x" src="./images/img2.jpg" alt="computer and phone" width="360" height="300">
             </li>
         </ul>
         </div>
@@ -112,7 +130,7 @@
         <ul class="team-list list">
             
             <li class="team-item">
-                <img src="./images/img3.jpg" alt="product designer" width="264" height="260">
+                <img srcset="./images/img3.jpg 1x, ./images/mark-2x.jpg 2x" src="./images/img3.jpg" alt="product designer" width="264" height="260">
             <div class="employees">
                     <h3 class="team-subtitle section-subtitle">Mark Guerrero</h3>
                         <p class="team-text sektion-text">Product Designer</p>                        
@@ -149,7 +167,7 @@
                     </div>
             </li>
             <li class="team-item">
-                <img src="./images/img4.jpg" alt="frontent develeper" width="264" height="260">
+                <img srcset="./images/img4.jpg 1x, ./images/tom-2x.jpg 2x" src="./images/img4.jpg" alt="frontent develeper" width="264" height="260">
                 <div class="employees">
                     <h3 class="team-subtitle section-subtitle">Tom Ford</h3>
                         <p class="team-text sektion-text">Frontend Developer</p>
@@ -186,7 +204,7 @@
                         </div>
             </li>
             <li class="team-item">
-                <img src="./images/img5.jpg" alt="marketing" width="264" height="260" >
+                <img srcset="./images/img5.jpg 1x, ./images/kamilla-2x.jpg 2x" src="./images/img5.jpg" alt="marketing" width="264" height="260" >
             <div class="employees">
                     <h3 class="team-subtitle section-subtitle">Camila Garcia</h3>
                     <p class="team-text sektion-text">Marketing</p>
@@ -223,7 +241,7 @@
                     </div>
             </li>
             <li class="team-item">
-                <img src="./images/img6.jpg" alt="ui designer" width="264" height="260">
+                <img srcset="./images/img6.jpg 1x, ./images/daniel-2x.jpg 2x" src="./images/img6.jpg" alt="ui designer" width="264" height="260">
             <div class="employees">
                     <h3 class="team-subtitle section-subtitle">Daniel Wilson</h3>
                         <p class="team-text sektion-text">UI Designer</p>
