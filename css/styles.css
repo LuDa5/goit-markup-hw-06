@@ -1174,6 +1174,13 @@ max-width: 408px;
 .location-list {
     flex-basis: calc((100% - 34px) / 5);
 }
+.directions-list {
+    display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+}
+
 }
 
  @media screen and (min-width: 1158px) {
