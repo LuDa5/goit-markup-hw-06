@@ -376,6 +376,7 @@ gap: 72px;
 text-transform: capitalize;
     margin: 0 auto;
     margin-bottom: 72px;
+        font-weight: 700;
 }
 .team-subtitle {
     display: flex;
