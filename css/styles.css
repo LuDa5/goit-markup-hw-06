@@ -64,20 +64,16 @@ font-weight: 500;
     text-transform: capitalize;
 }
 .section-subtitle {
-    color: var(--navyblue, #2E2F42);
 text-align: center;
 font-size: 36px;
-font-family: Roboto;
 font-weight: 700;
-line-height: 1.21;
 letter-spacing: 0.72px;
-text-transform: capitalize;
+text-transform: capitalize; 
 }
 .sektion-text {
         color: var(--slate, #434455);
             font-size: 16px;
             font-family: Roboto;
-            font-weight: 500;
             line-height: 1.5;
             letter-spacing: 0.32px;
 } 
@@ -546,11 +542,18 @@ transform: translateY(0%);
 .directions-subtitle {
     padding: 32px 0 8px 16px;
     margin-bottom: 8px;
-    
+        color: var(--navyblue, #2E2F42);
+            font-size: 20px;
+            font-family: Roboto;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 0.4px;
+        text-align: left;
 }
 .directions-text {
     padding-left: 16px;
     margin-bottom: 8px;
+
 }
 .directions-dekor {
     padding-bottom: 120px;
@@ -833,7 +836,6 @@ transition: fill var(--transition);
 font-weight: 500;
 font-size: 16px;
     line-height: 1.5;
-    /* text-align: center; */
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 16px;
@@ -1072,13 +1074,20 @@ max-width: 408px;
 .location-list {
     flex-basis: calc((100% - 34px) / 5);
 }
-.directions-list {
-    display: flex;
-flex-wrap: wrap;
-column-gap: 24px;
-row-gap: 48px;
+.location-list {
+    justify-content: center;
 }
-
+.directions-list {
+    flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        justify-content: normal;
+        width: 100%;
+}
+.directions-item {
+    width: calc((100% - 24px) / 2);
+}
+     
 }
 
  @media screen and (min-width: 1158px) {
@@ -1178,5 +1187,16 @@ padding-left: 0;
         font-family: Roboto;
         line-height: 1.5;
         letter-spacing: 0.32px;
+}
+.directions-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: normal;
+    width: 100%;
+}
+
+.directions-item {
+    width: calc((100% - 48px) / 3);
 }
 }
