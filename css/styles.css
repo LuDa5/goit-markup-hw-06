@@ -350,9 +350,8 @@ gap: 72px;
 /* ---------DOINGES3---------- */
 
 .doinges-title {
-    max-width: 323px;
-        margin: 0 auto;
-    margin-bottom: 72px;
+        margin: 0 auto 72px;
+        font-weight: 700;
 }
 .doinges {
     display: none;
@@ -375,7 +374,6 @@ gap: 72px;
 }
 .team-title {
 text-transform: capitalize;
-max-width: 162px;
     margin: 0 auto;
     margin-bottom: 72px;
 }
@@ -384,6 +382,13 @@ max-width: 162px;
     justify-content: center;
         align-items: center;
         text-align: center;
+        color: var(--navyblue, #2E2F42);
+            font-size: 20px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 0.4px;
 }
 .team-text {
 display: flex;
@@ -788,7 +793,8 @@ margin-left: 16px;
     left: 50%;
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform var(--transition);
-    max-width: calc(100% - 32px);
+    max-width: 408px;
+    width: calc(100% - 32px);
     min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -839,7 +845,6 @@ font-size: 16px;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 16px;
-    width: 360px;
 }
 .modal-input {
     width: 100%;
@@ -1068,9 +1073,7 @@ letter-spacing: 0.48px;
 .header-soc-item {
     padding: 0;
 }
-.modal {
-max-width: 408px;
-}
+
 .location-list {
     flex-basis: calc((100% - 34px) / 5);
 }
